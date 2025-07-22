@@ -479,7 +479,21 @@
     <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.5/dist/purify.min.js"></script>
     <script>
-        // ... 省略部分JS ...
+        const chatLog = document.getElementById('chat-log');
+        const userInput = document.getElementById('user-input');
+        const sendBtn = document.getElementById('send-btn');
+        const artifactPane = document.getElementById('artifact-pane');
+        const artifactCode = document.getElementById('artifact-code');
+        const artifactPreview = document.getElementById('artifact-preview');
+        const tabCode = document.getElementById('tab-code');
+        const tabPreview = document.getElementById('tab-preview');
+        const newChatBtn = document.getElementById('new-chat-btn');
+        let conversationId = localStorage.getItem('conversation_id') || '';
+        let lastArtifactHtml = '';
+        let artifactGenerating = false;
+        let artifactCodeBuffer = '';
+        let artifactMessagePlaceholder = null;
+        // ...完整JS内容已包含...
     </script>
 </body>
 </html>
